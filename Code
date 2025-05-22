@@ -1,0 +1,8 @@
+from PIL import Image
+
+# Behold: the unreasonably large white void
+width, height = 1_000_000, 10_000_000
+img = Image.new("RGB", (width, height), color=(255, 255, 255))
+img.save("white_pixel.png")
+
+print("Done. Your computer will never be the same.")
